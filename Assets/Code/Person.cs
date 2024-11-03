@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class Person : MonoBehaviour
 {
-    public Vector3 targetPosition;
+    GameObject Person_H;
+    
+    void staet()
+    {
+        this.Person_H = GameObject.Find("Person");
+        Vector3 myPosition = this.Person_H.transform.position;
+    }
 
     public void MoveToTarget()
     {
-        transform.position = targetPosition;
+        Vector3 myPosition = this.Person_H.transform.position;
+        while (myPosition.x < 50)
+        {
+            myPosition = this.Person_H.transform.position;
+            transform.Translate(2,0,0);
+        }
     }
 }

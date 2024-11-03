@@ -259,9 +259,9 @@ RectTransform:
   - {fileID: 611411068}
   m_Father: {fileID: 215547314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -141, y: 52}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &343612067
@@ -328,8 +328,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 82365f1c851c84546b673edd5a4214ad, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 505218120}
   - component: {fileID: 505218119}
   m_Layer: 0
-  m_Name: P
+  m_Name: Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,7 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e88c27e034b824dab9e396cd27eaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!212 &505218120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -681,8 +680,8 @@ GameObject:
   - component: {fileID: 828435630}
   - component: {fileID: 828435634}
   - component: {fileID: 828435633}
-  - component: {fileID: 828435632}
   - component: {fileID: 828435631}
+  - component: {fileID: 828435632}
   m_Layer: 5
   m_Name: YES_Button
   m_TagString: Untagged
@@ -705,9 +704,9 @@ RectTransform:
   - {fileID: 2048809934}
   m_Father: {fileID: 215547314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 134, y: 72}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828435631
@@ -717,12 +716,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828435629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f12f05d5b8d25c44e996debf6733e867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Person: {fileID: 505218118}
+  Trol: {fileID: 1392491318}
 --- !u!114 &828435632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,8 +768,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 828435631}
-        m_TargetAssemblyTypeName: T_Movement, Assembly-CSharp
-        m_MethodName: OnClick
+        m_TargetAssemblyTypeName: Button_R, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e3abe9d06f73a5c42b0bdd63d69efb9f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -895,8 +895,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1392491320}
   - component: {fileID: 1392491319}
+  - component: {fileID: 1392491321}
   m_Layer: 0
-  m_Name: T
+  m_Name: Trol_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -969,6 +970,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392491321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392491318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1a18cbafd5fc549ae82e74e1664b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2048809933
 GameObject:
   m_ObjectHideFlags: 0
