@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class T_Movement : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject Person; // 반응할 게임 오브젝트
 
